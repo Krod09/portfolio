@@ -8,40 +8,71 @@
 
   <body>
     <!--HEADER-->
-    <a href="#"><img id="headshot" src="resources/headshot.gif" height="120px"/></a>
     <header>
-      <div class="heading">
-      <h1 id="title">Kimberlee Rodriguez<span id="subtitle"><br>Front-End Developer</span></h1>
+      <a href="#"><img id="headshot" src="resources/images/headshot.gif" height="120px"/></a>
+
+      <div class="header">
+        <h1 id="title">Kimberlee Rodriguez,
+          <span style="font-size: 30px"> Front-End Developer</span>
+          <span style="font-size: 20px"><br><p id="skills"> Skills: HTML/HTML5, CSS/CSS3, JavaScript, JQuery, Git, GitHub, Ba$h CMD, UI/UX, Responsive Design, Sublime Text, Atom, Flexbox</p></span>
+        </h1>
       </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+
     </header><!--End HEADER-->
-
-    <!--MAIN-->
-    <main>
-
-      <section id="contact" class="list">
-        <div>
+<main>
+    <section id="portfolio">
+      <div id="portfolio_text">
+        <p><h1>Portfolio</h1></p><br>
+        <p>Click on the thumbnails below for examples of my work:</p></div>
+      <div class="site">
+        <a href="https://krod09.github.io/Broadway/" target="_blank"><img src="resources/images/thumb_broadway.jpg" alt="" width=220px></a>
+        <p class="caption">Design Company</p>
+      </div>
+      <div class="site">
+        <a href="https://Krod09.github.io/excursions/" target="_blank"><img src="resources/images/thumb_excursions.jpg" alt="" width=220px></a>
+        <p class="caption">Travel App Landing Page</p>
+      </div>
+      <div class="site">
+        <a href="https://Krod09.github.io/mytimes/" target="_blank"><img src="resources/images/thumb_mytimes.jpg" alt="" width=220px></a>
+        <p class="caption">Faux Newsletter</p>
+      </div>
+      <div class="site">
+        <a href="https://Krod09.github.io/teacozy/" target="_blank"><img src="resources/images/thumb_teacozy.jpg" alt="" width=220px></a>
+        <p class="caption">Tea Boutique</p>
+      </div>
+      <div class="site" style="width: 220px; height:186px;">
+        <h2 class="caption">Coming Soon</h2>
+      </div>
+      <div class="site" style="width: 220px; height:186px;">
+        <h2 class="caption">Coming Soon</h2>
+      </div>
+      <div class="site" style="width: 220px; height:186px;">
+        <h2 class="caption">Coming Soon</h2>
+      </div>
+    </section>
+<!--end Portfolio-->
+    <section id="contact">
+      <div><h1>Contact</h1></div>
+      <div>
         <p><a href="#">E-mail Me</a></p>
         <p><a href="#">LinkedIn Profile</a></p>
         <p><a href="#">Call</a></p>
-        </div>
-      </section>
+      </div>
 
-      <section id="examples" class="list">
-        Click on the links below for examples of my work:
-        <div><a href="#">SITELINK</a></div>
-        <div><a href="#">SITELINK</a></div>
-        <div><a href="#">SITELINK</a></div>
-        <div><a href="#">SITELINK</a></div>
-        <div><a href="#">SITELINK</a></div>
-        <div><a href="#">SITELINK</a></div>
-      </section>
+    </section>
+<!--end contact-->
 
-    </main><!--End MAIN-->
-
-    <!--FOOTER-->
+  <!--FOOTER-->
     <footer>
-      <p>&copy; Kimberlee Rodriguez, 2017</p>
-      <h6><a href="#">Back to top</h6>
-      <footer><!--End FOOTER-->
+        <a href="#">Back to top</a>
+        <p id="legal">&copy; Kimberlee Rodriguez, 2017</p>
+    </footer><!--End FOOTER-->
+  </main>
   </body>
 </html>

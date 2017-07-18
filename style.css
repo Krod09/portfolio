@@ -1,38 +1,130 @@
 body {
-  background: linear-gradient(#95A5A6, #566573);
-  min-height: 700px;
-  overflow: scroll;
   font-family: Georgia;
   font-size: 18px;
-}
-
-main {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
 #headshot {
+  margin: 10px;
 }
 
-.list {
-  display: block;
+header {
+  background: #FFFFFF;
+  height: 150px;
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 125px;
+  top:10px;
+  height: 110px;
+}
+
+#skills {
+  text-align: center;
+}
+
+main {
+  background: linear-gradient(#FFFFFF, #F5CBA7);
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.list div {
+nav {
+  margin: 20px;
+}
+
+nav a {
+  margin: 10px;
 }
 
 h1 {
-  font-family: impact;
+  font-family: Georgia;
   font-size: 40px;
   font-weight: bold;
-  color: #F2F4F4
+  color: #717D7E
   display: flex;
   justify-content: center;
 }
 
-#subtitle {
-  font-size: 30px;
+#portfolio {
+  background: black;
+  color: white;
+  opacity: .8;
+  display: flex;
+  height: 450px;
+  width: 90%;
+  flex-wrap: wrap;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
 }
 
-h6 {
-  font-size: 10px;
+.site:hover {
+  transform: scale(1.1);
+  border: 3px solid #F5CBA7;
+}
+
+#portfolio_text {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+
+#portfolio_text p{
+  margin: 0;
+}
+
+.site {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #F5CBA7;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact div {
+  display: inline-flex;
+  justify-content: center;
+  height: 75px;
+}
+
+#contact p {
+  padding: 20px;
+}
+
+footer {
+  font-size: 16px;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#legal {
+  text-align: left;
 }
