@@ -10,53 +10,60 @@ body {
   margin: 10px;
 }
 
-header {
+.main_header {
   background: #FFFFFF;
   height: 150px;
   position: fixed;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 5;
+  box-shadow: 0 0 20px 0 #000000;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: 125px;
-  top:10px;
-  height: 110px;
+  align-items: flex-start;
+}
+
+#title {
+  display: flex;
+  align-items: baseline;
 }
 
 #skills {
-  text-align: center;
+  font-size: 20px;
 }
 
 main {
-  background: linear-gradient(#FFFFFF, #F5CBA7);
+  background: linear-gradient(#FFFFFF, #F5CBA7, #E67E22);
   margin-top: 150px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
 
 nav {
-  margin: 20px;
+  margin: 10px;
+  width: 250px;
+  height: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 nav a {
-  margin: 10px;
+  font-size: 16px;
+  margin: 5px;
 }
 
 h1 {
   font-family: Georgia;
   font-size: 40px;
   font-weight: bold;
-  color: #717D7E
   display: flex;
   justify-content: center;
 }
@@ -73,6 +80,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
+  border: 1px solid black;
 }
 
 .site:hover {
@@ -110,21 +118,21 @@ h1 {
   height: 75px;
 }
 
-#contact p {
-  padding: 20px;
+#contact p, #contact a {
+  padding: 10px;
+  color: black;
+}
+
+a.contact_link:hover {
+  font-weight: bold;
 }
 
 footer {
   font-size: 16px;
   display: flex;
-  height: 100px;
+  height: 150px;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-
-#legal {
-  text-align: left;
 }
