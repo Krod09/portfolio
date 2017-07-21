@@ -1,6 +1,15 @@
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+html {
+  font-size: 20px;
+}
+
 body {
   font-family: Georgia;
-  font-size: 18px;
   min-height: 700px;
   display: flex;
   flex-direction: column;
@@ -12,7 +21,7 @@ body {
 
 .main_header {
   background: #FFFFFF;
-  height: 150px;
+  height: 25%;
   position: fixed;
   display: flex;
   top: 0;
@@ -23,6 +32,7 @@ body {
 }
 
 .header {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -30,16 +40,22 @@ body {
 
 #title {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  font-size: 2rem;
+}
+
+#subtitle {
+  font-size: 1.75rem;
 }
 
 #skills {
-  font-size: 20px;
+  font-size: 1.125rem;
 }
 
 main {
   background: linear-gradient(#FFFFFF, #F5CBA7, #E67E22);
-  margin-top: 150px;
+  margin-top: 15%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -55,14 +71,14 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
-  font-size: 16px;
-  margin: 5px;
+a {
+  color: black;
+  margin: 10px;
 }
 
 h1 {
   font-family: Georgia;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -107,6 +123,10 @@ h1 {
   border: 1px solid #F5CBA7;
 }
 
+figcaption {
+  padding: 7px;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -114,11 +134,13 @@ h1 {
 
 #contact div {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   height: 75px;
+  margin: 10px;
 }
 
-#contact p, #contact a {
+#contact p {
   padding: 10px;
   color: black;
 }
@@ -129,6 +151,7 @@ a.contact_link:hover {
 
 footer {
   font-size: 16px;
+  margin: 10px;
   display: flex;
   height: 150px;
   width: 100%;
