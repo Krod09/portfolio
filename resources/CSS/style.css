@@ -21,7 +21,7 @@ body {
 
 .main_header {
   background: #FFFFFF;
-  height: 20%;
+  height: 175px;
   position: fixed;
   display: flex;
   top: 0;
@@ -52,6 +52,7 @@ body {
 
 #skills {
   font-size: 1.125rem;
+  margin: 20px 0;
 }
 
 main {
