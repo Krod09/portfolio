@@ -1,63 +1,68 @@
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 html {
   font-size: 20px;
 }
 
 body {
+  font-size: 1rem;
   font-family: Georgia;
-  min-height: 700px;
   display: flex;
   flex-direction: column;
 }
 
-#headshot {
-  margin: 10px;
-}
-
 .main_header {
   background: #FFFFFF;
-  height: 175px;
   position: fixed;
-  display: flex;
   top: 0;
   left: 0;
   right: 0;
   z-index: 5;
   box-shadow: 0 0 20px 0 #000000;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreen .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_header .fullscreen {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  margin: 30px 10px;
-  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+
+.title {
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-
-#title {
-  display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  font-size: 2rem;
+  justify-content: center;
+  margin: 0 0 0 1rem;
 }
 
-#subtitle {
-  font-size: 1.75rem;
+.subtitle, .title h1 {
+  margin: 0;
 }
 
-#skills {
+.skills {
   font-size: 1.125rem;
-  margin: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 main {
   background: linear-gradient(#FFFFFF, #F5CBA7, #E67E22);
-  margin-top: 15%;
+  margin-top: 11rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -73,17 +78,9 @@ nav {
   justify-content: space-between;
 }
 
-nav a, contact a {
+nav a, #contact a {
   color: black;
   margin: 10px;
-}
-
-h1 {
-  font-family: Georgia;
-  font-size: 50px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
 }
 
 #portfolio {
@@ -113,7 +110,7 @@ h1 {
   font-size: 20px;
 }
 
-#portfolio_text p{
+#portfolio_text p {
   margin: 0;
 }
 
@@ -160,4 +157,34 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.tabletview {
+  display: none;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media only screen and (max-width: 720px) {
+
+.fullscreen div, .fullscreen span, .fullscreen nav {
+    display: none;
+  }
+
+.tabletview {
+  display: flex;
+}
+
+div.tabletview .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#portfolio_text h1, #portfolio_text p{
+  padding: 0;
+  margin: 0;
+}
+
 }
