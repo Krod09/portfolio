@@ -9,6 +9,10 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 .main_header {
   background: #FFFFFF;
   position: fixed;
@@ -17,7 +21,7 @@ body {
   right: 0;
   z-index: 5;
   box-shadow: 0 0 20px 0 #000000;
-  height: 11rem;
+  height: 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,9 +48,10 @@ body {
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   margin: 0 0 0 1rem;
+  font-size: 1.5rem;
 }
 
 .subtitle, .title h1 {
@@ -110,6 +115,10 @@ nav a, #contact a {
   font-size: 20px;
 }
 
+#portoflio p {
+  font-size: 1.5rem;
+}
+
 #portfolio_text p {
   margin: 0;
 }
@@ -166,7 +175,7 @@ footer {
 
 /*RESPONSIVENESS*/
 
-@media only screen and (max-width: 720px) {
+@media screen and (max-width: 705px) {
 
 .fullscreen div, .fullscreen span, .fullscreen nav {
     display: none;
@@ -176,7 +185,7 @@ footer {
   display: flex;
 }
 
-div.tabletview .container {
+.tabletview .container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
