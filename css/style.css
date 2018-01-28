@@ -1,0 +1,15 @@
+body {
+     font-family: 'Raleway', sans-serif;
+}
+
+.lightfont {
+     font-weight: 100;
+}
+
+.green{
+     color: rgb(0,100,55);
+}
+
+.teal{
+     color: rgb(38, 170, 171);
+}
