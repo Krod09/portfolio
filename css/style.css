@@ -34,10 +34,13 @@ nav{
 section{
      margin: 50px 0;
 }
-
+img{
+     height: 100%;
+     width: 100%;
+}
 #portfolio{
      background: rgb(218, 213, 213);
-     height: 430px;
+     height: 500px;
      border: 1pt solid black;
      border-style: inset;
 }
@@ -48,40 +51,41 @@ section{
 #contact{
      height: 175px;
 }
-#contact img{
-     position: relative;
-     width: auto;
-     height: 80px;
+#contact .col{
+     padding: 0;
+}
+#contact div.container{
 }
 #blog{
 }
 footer{
-     font-size: .6em;
+     font-size: .75em;
 }
 
 
 /* MEDIA QUERIES */
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
+     html{
+          font-size: 18pt;
+     }
      .heading {
-          font-size: 2.5rem;
           padding: 40px 0;
      }
-}
-@media (max-width: 590px) {
-     #contact img{
-          height:50px;
+     .nav-link{
+          padding: 10px;
+     }
+     #contact .container{
+          height: 40%;
      }
 }
+
 @media (max-width: 750px) {
-     html {
-          font-size: 1.25rem;
-     }
+
      .subheading {
-          font-size: 1.5rem;
           padding: 30px 0;
      }
      .nav-link{
-          padding: 20px;
+          padding: 10px;
      }
 }
