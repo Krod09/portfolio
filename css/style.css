@@ -52,8 +52,12 @@ section{
      width: 40%;
      border: 2pt solid black;
 }
-.icon{
+#contact .container {
+
+}
+.icon img{
      padding: 0;
+     width: 100%;
 }
 footer{
      font-size: .75em;
@@ -78,8 +82,7 @@ footer{
      .nav-link{
           padding: 10px;
      }
-     .icon img{
-          height: 80%;
-          width: auto;
+     .container .icon{
+          padding: 5px;
      }
 }
