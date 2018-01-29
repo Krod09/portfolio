@@ -1,15 +1,87 @@
-body {
+html{
      font-family: 'Raleway', sans-serif;
+     font-size: 20pt;
 }
-
-.lightfont {
+.lightfont{
      font-weight: 100;
 }
-
 .green{
      color: rgb(0,100,55);
 }
+.blackbg{
+     background: black;
+     color: rgb(108,209,249);
+}
+.row{
+}
+.heading {
+     padding: 50px 0;
+     font-size: 3.5rem;
+}
+.subheading {
+     font-size: 1.5rem;
+     padding: 50px 0;
+     text-transform: uppercase;
+     text-align: center;
+}
+nav{
+     border-bottom: 1pt solid black;
+}
+.nav-link{
+     color: black;
+     padding: 10px 40px;
+}
+section{
+     margin: 50px 0;
+}
 
-.teal{
-     color: rgb(38, 170, 171);
+#portfolio{
+     background: rgb(218, 213, 213);
+     height: 430px;
+     border: 1pt solid black;
+     border-style: inset;
+}
+#selfimg{
+     width: 40%;
+     position: relative;
+}
+#contact{
+     height: 175px;
+}
+#contact img{
+     position: relative;
+     width: auto;
+     height: 80px;
+}
+#blog{
+}
+footer{
+     font-size: .6em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 470px) {
+     .heading {
+          font-size: 2.5rem;
+          padding: 40px 0;
+     }
+}
+@media (max-width: 590px) {
+     #contact img{
+          height:50px;
+     }
+}
+@media (max-width: 750px) {
+     html {
+          font-size: 1.25rem;
+     }
+     .subheading {
+          font-size: 1.5rem;
+          padding: 30px 0;
+     }
+     .nav-link{
+          padding: 20px;
+     }
 }

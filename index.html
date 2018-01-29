@@ -9,14 +9,63 @@
   </head>
 
  <body>
-     <div class="jumbotron">
-          <div class="container text-center">
-               <div class="display-1 lightfont">KIM <b>RODRIGUEZ</b></div>
-               <div class="display-3 teal">Designer</div>
-               <div class="display-3 teal">Developer</div>
+     <header class="container-fluid">
+          <div class="row heading">
+                <div class="col-12 lightfont text-center">KIM <b><u>RODRIGUEZ</u></b></div>
           </div>
+          <div class="blackbg subheading row d-flex flex-column">
+                     <div class="col-12 lightfont">Design. Develop. Deliver.</div>
+          </div>
+     </header>
+
+     <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+     </nav>
+
+     <section id="portfolio" class="container lightfont">
+          <div class="subheading">Portfolio Container</div>
+     </section>
+
+     <section id="about" class="container lightfont text-center">
+          <p class="subheading">About Me</p>
+          <img src="css/resources/self.jpg" id="selfimg" alt="photo of Kim" style="border:2pt solid black;">
+          <p><br>Welcome to my site! My name is Kimberlee and I’ve been teaching myself how to design and code websites from scratch since 2016. My determination keeps me waking up every day wanting to see more, do more, learn more.
+          <br></br>
+          <em>“The process may seem strange and yet it is very true. I did not so much gain the knowledge of things by the words, as words by the experience I had of things.”</em>
+          <br>- Plutarch
+          </p>
+     </section>
+
+          <section id="contact" class="container lightfont">
+               <div class="subheading">Contact Me</div>
+               <div class="container d-flex flex-wrap justify-content-around">
+                    <a href="tel:14435615919" target="_blank" alt="telephone"><img src="css/resources/icon_phone.png"  href="tel:14435615919" alt="phone"></a>
+                    <a href="https://www.linkedin.com/in/kimberleerodriguez/" target="_blank" alt="linked in"><img src="css/resources/icon_li.png" alt="linked in"></a>
+                    <a href="https://github.com/wwckim" target="_blank" alt="github"><img src="css/resources/icon_gh.png" href="https://github.com/wwckim/" target="_blank" alt="github"></a>
+                    <a href="https://www.twitter.com/wwckim" target="_blank" alt="twitter"><img src="css/resources/icon_tt.png" href="https://www.twitter.com/wwckim/" target="_blank" alt="twitter"></a>
+                    <a href="https://plus.google.com/u/0/106142394500539088269" target="_blank" alt="G mail"><img src="css/resources/icon_gg.png"href="mailto:wwckim@gmail.com"  target="_blank" alt="G mail"></a>
+               </div>
+          </section>
+
+          <section id="blog" class="container lightfont subheading">
+               Blog coming soon!
+          </section>
      </div>
 
+     <footer class="text-center"><br><br>2018 &copy; Kimberlee Rodriguez<br><a href="#">back to top</a></footer>
 
 
     <!-- Optional JavaScript, then jQuery, then Popper.js, then Bootstrap JS -->
