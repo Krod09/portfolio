@@ -17,13 +17,22 @@ header{
      font-size: 3.5rem;
      font-weight: 100;
      padding: 50px 0;
+     text-transform: uppercase;
+}
+.kim{
+     margin: 0;
+}
+.rodriguez{
+     text-decoration: underline;
+     font-weight: 400;
+     margin: 0;
 }
 .subtitle {
      font-size: 1.5rem;
      text-transform: uppercase;
      text-align: center;
      font-weight: 100;
-     padding: 50px;
+     padding: 80px;
 }
 .subheading {
      font-size: 1.5rem;
@@ -79,6 +88,9 @@ footer{
 }
 
 @media (max-width: 750px) {
+     .title{
+          font-size: 2.5rem;
+     }
      .nav-link{
           padding: 10px;
      }
