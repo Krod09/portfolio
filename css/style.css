@@ -51,12 +51,19 @@ nav{
 section{
      margin-bottom: 50px;
 }
-#portfolio .box{
-     background: rgb(218, 213, 213);
-     height: 500px;
+.carousel-inner{
      border: 1pt solid black;
-     border-style: inset;
 }
+.carousel-item {
+     height: 500px;
+}
+.carousel-item > img{
+     width: 100%;
+}
+.d-block{
+     margin: auto;
+}
+
 #selfimg{
      width: 40%;
      border: 2pt solid black;
@@ -64,7 +71,7 @@ section{
 #contact .container {
 
 }
-.icon img{
+.icon > img{
      padding: 0;
      width: 100%;
 }
@@ -94,7 +101,7 @@ footer{
      .nav-link{
           padding: 10px;
      }
-     .container .icon{
+     .container > .icon{
           padding: 5px;
      }
 }
