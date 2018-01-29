@@ -2,9 +2,6 @@ html{
      font-family: 'Raleway', sans-serif;
      font-size: 20pt;
 }
-.lightfont{
-     font-weight: 100;
-}
 .green{
      color: rgb(0,100,55);
 }
@@ -12,17 +9,28 @@ html{
      background: black;
      color: rgb(108,209,249);
 }
-.row{
+header{
+     margin:0;
+     padding:0;
 }
-.heading {
-     padding: 50px 0;
+.title {
      font-size: 3.5rem;
+     font-weight: 100;
+     padding: 50px 0;
+}
+.subtitle {
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: 100;
+     padding: 50px;
 }
 .subheading {
      font-size: 1.5rem;
-     padding: 50px 0;
+     margin: 50px 0;
      text-transform: uppercase;
      text-align: center;
+     font-weight: 100;
 }
 nav{
      border-bottom: 1pt solid black;
@@ -32,13 +40,9 @@ nav{
      padding: 10px 40px;
 }
 section{
-     margin: 50px 0;
+     margin-bottom: 50px;
 }
-img{
-     height: 100%;
-     width: 100%;
-}
-#portfolio{
+#portfolio .box{
      background: rgb(218, 213, 213);
      height: 500px;
      border: 1pt solid black;
@@ -46,17 +50,10 @@ img{
 }
 #selfimg{
      width: 40%;
-     position: relative;
+     border: 2pt solid black;
 }
-#contact{
-     height: 175px;
-}
-#contact .col{
+.icon{
      padding: 0;
-}
-#contact div.container{
-}
-#blog{
 }
 footer{
      font-size: .75em;
@@ -75,17 +72,14 @@ footer{
      .nav-link{
           padding: 10px;
      }
-     #contact .container{
-          height: 40%;
-     }
 }
 
 @media (max-width: 750px) {
-
-     .subheading {
-          padding: 30px 0;
-     }
      .nav-link{
           padding: 10px;
+     }
+     .icon img{
+          height: 80%;
+          width: auto;
      }
 }
